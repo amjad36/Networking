@@ -8,7 +8,7 @@
 import Foundation
 
 public class NetworkManager {
-    public static let shared = NetworkManager()
+    @MainActor public static let shared = NetworkManager()
     
     private init() {}
     
